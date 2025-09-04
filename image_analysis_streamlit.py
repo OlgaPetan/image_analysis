@@ -243,8 +243,8 @@ def classify_image_amenities(image_bytes: bytes, mime: str, model: str) -> Class
     return ClassificationAmenities(detected)
 
 # ============== UI ==============
-st.set_page_config(page_title="Airbnb Photo Analyzer", layout="wide")
-st.title("🏠 Airbnb Photo Analyzer")
+st.set_page_config(page_title="Otamiser Photo Analyzer", layout="wide")
+st.title("Otamiser Photo Analyzer")
 
 st.sidebar.header("Settings")
 analysis_mode = st.sidebar.radio("Analysis", ["Rooms", "Amenities"], index=0)
