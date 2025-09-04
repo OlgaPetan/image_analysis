@@ -38,8 +38,6 @@ def parse_json_strict(text: str) -> Dict[str, Any]:
 
 # ============== Pretty amenity labels (no per-item map) ==============
 SMALL_WORDS = {"and","or","of","the","a","an","in","on","for","to"}
-
-SMALL_WORDS = {"and","or","of","the","a","an","in","on","for","to"}
 ACRONYMS = {"tv","ac","co","bbq","usb","hdmi","led","vr"}  # extend if you need
 
 def pretty_amenity_auto(name: str) -> str:
@@ -263,9 +261,6 @@ uploads = st.file_uploader(
     accept_multiple_files=True,
     help="Drag & drop multiple images here."
 )
-
-if not openai.api_key:
-    st.warning("Set OPENAI_API_KEY in your environment or .env file (then restart).")
 
 if uploads:
     rows = []
